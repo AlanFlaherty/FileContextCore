@@ -1,24 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.6</TargetFramework>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
     <AssemblyName>FileContextCore</AssemblyName>
+    <OutputType>Library</OutputType>
     <PackageId>FileContextCore</PackageId>
-    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
+    <RuntimeFrameworkVersion>1.1.0</RuntimeFrameworkVersion>
     <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <SignAssembly>False</SignAssembly>
-    <DelaySign>True</DelaySign>
-    <Description>FileContextCore is a "Database"-Provider for Entity Framework Core and adds the ability to store information in files instead of being limited to databases. It enables fast developments because of the advantage of just copy, edit and delete files.</Description>
+    <Description>FileContextCore is a "Database"-Provider for Entity Framework Core and adds the ability to store information in files instead of being limited to data bases. It enables fast developments because of the advantage of just copy, edit and delete files.</Description>
     <Authors>morrisjdev</Authors>
     <PackageLicenseUrl>https://github.com/morrisjdev/FileContextCore/blob/master/LICENSE</PackageLicenseUrl>
     <Copyright>Copyright (c) 2017 Morris Janatzek</Copyright>
     <PackageProjectUrl>https://github.com/morrisjdev/FileContextCore</PackageProjectUrl>
     <RepositoryUrl>https://github.com/morrisjdev/FileContextCore</RepositoryUrl>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Version>1.0.9</Version>
     <PackageTags>ef, database, file, db, filedb, json, xml, csv, xlsx, excel, dbcontext, entity framework</PackageTags>
     <PackageIconUrl>https://morrisj.net/img/morrisjdev_logo.png</PackageIconUrl>

@@ -35,5 +35,17 @@ namespace FileContextCore.Storage
         {
             return Task.FromResult(QueryHelper.cache.ExecuteTransaction(entries));
         }
+
+        public override Func<QueryContext, IAsyncEnumerable<TResult>> CompileAsyncQuery<TResult>(QueryModel queryModel)
+        {
+            if(queryModel == null)
+            {
+                throw new ArgumentNullException("queryModel");
+            }
+
+            Func<QueryContext, IEnumerable<TResult>> syncQueryExecutor = CompileQuery<TResult>(queryModel);
+
+            return qc => syncQueryExecutor(qc).ToAsyncEnumerable();
+        }
     }
 }
